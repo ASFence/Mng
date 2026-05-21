@@ -328,7 +328,7 @@ window.addEventListener('DOMContentLoaded',()=>{
   locationConsent = localStorage.getItem('locationConsent')==='true';
   loadUser(); checkPermissions(); loadRecentRecords();
   document.getElementById('userNameInput').addEventListener('keydown',e=>{if(e.key==='Enter')toggleUserEdit();});
-  if(CONFIG.API_URL==='__API_URL__') setStatus('error','API_URL 미설정 — GitHub Actions 빌드를 실행하세요');
+  //if(CONFIG.API_URL==='__API_URL__') setStatus('error','API_URL 미설정 — GitHub Actions 빌드를 실행하세요');
 });
 
 // ── 동의 ─────────────────────────────────────
